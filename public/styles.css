@@ -1,0 +1,168 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1a1a1a;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#chat-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 900px;
+  background-color: #2e2e2e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Header */
+h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Room List */
+#room-list {
+  background-color: #3c3c3c;
+  padding: 15px;
+  border-radius: 8px;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+}
+
+#room-list li {
+  background-color: #444;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+#room-list li:hover {
+  background-color: #555;
+  cursor: pointer;
+}
+
+#room-list input {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #666;
+  background-color: #2a2a2a;
+  color: #fff;
+  width: calc(100% - 20px);
+  font-size: 16px;
+}
+
+/* User List */
+#user-list {
+  background-color: #3c3c3c;
+  padding: 15px;
+  border-radius: 8px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#user-list li {
+  background-color: #444;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+#user-list li:hover {
+  background-color: #555;
+  cursor: pointer;
+}
+
+/* Messages Section */
+#messages-container {
+  background-color: #333;
+  padding: 15px;
+  border-radius: 8px;
+  flex: 1;
+  margin-bottom: 20px;
+  overflow-y: auto;
+  height: calc(100% - 160px); /* Adjust the height based on the other elements */
+}
+
+#messages {
+  list-style-type: none;
+  padding: 0;
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+#messages li {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #444;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+#messages li:nth-child(odd) {
+  background-color: #555;
+}
+
+#messages li .user {
+  font-weight: bold;
+  color: #FFD700;
+}
+
+#messages li .message {
+  display: inline-block;
+  margin-left: 10px;
+  color: #ddd;
+}
+
+/* Message Form */
+#message-form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+#message-form input {
+  flex: 1;
+  padding: 12px;
+  margin-right: 10px;
+  border-radius: 8px;
+  border: 1px solid #666;
+  background-color: #2a2a2a;
+  color: #fff;
+  font-size: 16px;
+}
+
+#message-form button {
+  padding: 12px 20px;
+  background-color: #3a3a3a;
+  color: #fff;
+  border: 1px solid #555;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#message-form button:hover {
+  background-color: #4b4b4b;
+}
+
+/* Active Room and User Styles */
+#room-list li.active, #user-list li.active {
+  background-color: #ffd700;
+  color: #1a1a1a;
+}
